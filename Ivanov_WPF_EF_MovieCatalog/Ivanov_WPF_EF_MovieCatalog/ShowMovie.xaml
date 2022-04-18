@@ -1,0 +1,78 @@
+﻿<Window x:Name="ShowMovieWindow" x:Class="Ivanov_WPF_EF_MovieCatalog.ShowMovie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ivanov_WPF_EF_MovieCatalog"
+        mc:Ignorable="d"
+        Title="Show movie" Height="290" Width="458" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+
+
+    <Grid Background="#161523">
+
+        <TextBox x:Name="titleTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="185,0,10,165" 
+                 TextWrapping="Wrap" 
+                 Foreground="White"
+                 Background="#211F2E"
+                 BorderBrush="#FF434343"
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" IsReadOnly="True"/>
+        <TextBox x:Name="yearTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="185,0,10,127" 
+                 TextWrapping="Wrap" 
+                 Foreground="White"
+                 Background="#211F2E" 
+                 BorderBrush="#FF434343" 
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" IsReadOnly="True"/>
+        <TextBox x:Name="budgetTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="185,0,10,90" 
+                 TextWrapping="Wrap" 
+                 Foreground="White"
+                 Background="#211F2E" 
+                 BorderBrush="#FF434343" 
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" IsReadOnly="True"/>
+        <TextBox x:Name="countryTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="185,0,10,53" 
+                 TextWrapping="Wrap" 
+                 Foreground="White"
+                 Background="#211F2E" 
+                 BorderBrush="#FF434343"
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" IsReadOnly="True"/>
+        <TextBox x:Name="descriptionTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="185,0,10,15" 
+                 TextWrapping="Wrap" 
+                 Foreground="White"
+                 Background="#211F2E" 
+                 BorderBrush="#FF434343"
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" IsReadOnly="True"/>
+
+        <Image x:Name="movieImage" 
+               VerticalAlignment="Bottom"
+               Margin="13,0,0,15" 
+               Source="Icons/picture.png" 
+               Grid.IsSharedSizeScope="True" 
+               Stretch="Fill" 
+               UseLayoutRounding="True" 
+               Height="218" HorizontalAlignment="Left" Width="158"/>
+        <TextBox x:Name="idTB" 
+            VerticalAlignment="Bottom"
+            Margin="185,0,10,203" 
+            TextWrapping="Wrap" 
+            Foreground="White"
+            Background="#211F2E"
+            BorderBrush="#FF434343"
+            UseLayoutRounding="True" 
+            VerticalContentAlignment="Center" Height="30" IsReadOnly="True"/>
+
+    </Grid>
+</Window>

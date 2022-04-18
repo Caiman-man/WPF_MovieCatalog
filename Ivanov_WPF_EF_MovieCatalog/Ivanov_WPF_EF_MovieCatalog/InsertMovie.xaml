@@ -1,0 +1,96 @@
+﻿<Window x:Name="AddMovieWindow" x:Class="Ivanov_WPF_EF_MovieCatalog.InsertMovie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ivanov_WPF_EF_MovieCatalog"
+        mc:Ignorable="d"
+        Title="Insert movie" Height="290" Width="415" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+
+
+    <Grid Background="#161523" MouseDown="Grid_MouseDown">
+
+        <TextBox x:Name="titleTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="161,0,10,210" 
+                 TextWrapping="Wrap" 
+                 Text=" Title" 
+                 Foreground="White"
+                 Background="#211F2E"
+                 BorderBrush="#FF434343"
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" PreviewMouseDown="titleTB_PreviewMouseDown"/>
+        <TextBox x:Name="yearTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="160,0,10,172" 
+                 TextWrapping="Wrap" 
+                 Text=" Year" 
+                 Foreground="White"
+                 Background="#211F2E" 
+                 BorderBrush="#FF434343" 
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" PreviewMouseDown="yearTB_PreviewMouseDown"/>
+        <TextBox x:Name="budgetTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="160,0,10,135" 
+                 TextWrapping="Wrap" 
+                 Text=" Budget" 
+                 Foreground="White"
+                 Background="#211F2E" 
+                 BorderBrush="#FF434343" 
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" PreviewMouseDown="budgetTB_PreviewMouseDown"/>
+        <TextBox x:Name="countryTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="160,0,10,98" 
+                 TextWrapping="Wrap" 
+                 Text=" Country" 
+                 Foreground="White"
+                 Background="#211F2E" 
+                 BorderBrush="#FF434343"
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" PreviewMouseDown="countryTB_PreviewMouseDown"/>
+        <TextBox x:Name="descriptionTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="160,0,10,60" 
+                 TextWrapping="Wrap" 
+                 Text=" Description" 
+                 Foreground="White"
+                 Background="#211F2E" 
+                 BorderBrush="#FF434343"
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" PreviewMouseDown="descriptionTB_PreviewMouseDown"/>
+
+        <Button x:Name="insertB" 
+                VerticalAlignment="Bottom"
+                Content="Insert" 
+                Margin="18,0,0,16"
+                Background="#938FBD"
+                Style="{DynamicResource roundedButtonForDialogs}" 
+                Height="30" HorizontalAlignment="Left" Width="110" Click="insertB_Click"/>
+        <Button x:Name="clearB" 
+                VerticalAlignment="Bottom"
+                Content="Clear" 
+                Margin="146,0,0,16"
+                Background="#938FBD"
+                Style="{DynamicResource roundedButtonForDialogs}" 
+                Height="30" HorizontalAlignment="Left" Width="110" Click="clearB_Click"/>
+        <Button x:Name="cancelB" 
+                VerticalAlignment="Bottom"
+                Content="Cancel" 
+                Margin="274,0,0,16"
+                Background="#938FBD"
+                Style="{DynamicResource roundedButtonForDialogs}" 
+                Height="30" HorizontalAlignment="Left" Width="110" Click="cancelB_Click"/>
+
+        <Image x:Name="movieImage" 
+               VerticalAlignment="Bottom"
+               Margin="13,0,253,60" 
+               Source="Icons/picture.png" 
+               Grid.IsSharedSizeScope="True" 
+               Stretch="Fill" 
+               UseLayoutRounding="True" 
+               Height="180" Cursor="Hand" PreviewMouseLeftButtonDown="movieImage_PreviewMouseLeftButtonDown"/>
+        
+    </Grid>
+</Window>

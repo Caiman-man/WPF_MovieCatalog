@@ -1,0 +1,70 @@
+﻿<Window x:Name="ShowActorWindow" x:Class="Ivanov_WPF_EF_MovieCatalog.ShowActor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ivanov_WPF_EF_MovieCatalog"
+        mc:Ignorable="d"
+        Title="Show actor" Height="243" Width="408" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+
+
+    <Grid Background="#161523">
+
+        <TextBox x:Name="idTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="154,0,10,163" 
+                 TextWrapping="Wrap" 
+                 Foreground="White"
+                 Background="#211F2E"
+                 BorderBrush="#FF434343"
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" IsReadOnly="True"/>
+        <TextBox x:Name="nameTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="154,0,10,125" 
+                 TextWrapping="Wrap" 
+                 Foreground="White"
+                 Background="#211F2E"
+                 BorderBrush="#FF434343"
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" IsReadOnly="True"/>
+        <TextBox x:Name="ageTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="154,0,10,87" 
+                 TextWrapping="Wrap" 
+                 Foreground="White"
+                 Background="#211F2E" 
+                 BorderBrush="#FF434343" 
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" IsReadOnly="True"/>
+        <TextBox x:Name="birthdateTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="154,0,10,50" 
+                 TextWrapping="Wrap" 
+                 Foreground="White"
+                 Background="#211F2E" 
+                 BorderBrush="#FF434343" 
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" IsReadOnly="True"/>
+        <TextBox x:Name="countryTB" 
+                 VerticalAlignment="Bottom"
+                 Margin="154,0,10,13" 
+                 TextWrapping="Wrap" 
+                 Foreground="White"
+                 Background="#211F2E" 
+                 BorderBrush="#FF434343"
+                 UseLayoutRounding="True" 
+                 VerticalContentAlignment="Center" Height="30" IsReadOnly="True"/>
+
+        <Image x:Name="actorImage" 
+               VerticalAlignment="Bottom"
+               HorizontalAlignment="Left"
+               Margin="13,0,0,13" 
+               Source="Icons/picture.png" 
+               Grid.IsSharedSizeScope="True" 
+               UseLayoutRounding="True" 
+               Height="180"  
+               Width="127" Stretch="Fill"/>
+
+    </Grid>
+</Window>
